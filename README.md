@@ -22,13 +22,13 @@ How to know if your device can be unbricked via this method?
 
 1. Make sure to have installed `mtkclient-git` and `android-tools`.
 
-2. Make sure to have the `DA_MT6886.bin`, `AUTH_sv6.auth` and the `preloader_raw.bin` files in your computer.
+2. Make sure to have the `DA_MT6886.bin`, `auth_sv6.auth` and the `preloader_raw.img` files in your computer.
 
    *Optionally, kill ModemManager with `sudo systemctl stop ModemManager`. AFAIK this process hooks the device in BROM as a modem, and the phone might kill the connection.*
 
 3. After that, you might proceed deleting the misc partition:
 
-Run `sudo mtk e misc --preloader preloader_raw.bin --auth AUTH_sv6.auth --loader DA_MT6886.bin` (or whatever your filenames are) and let it run in the background, it will be waiting for the device to connect in BROM mode.
+Run `sudo mtk e misc --preloader preloader_raw.img --auth auth_sv6.auth --loader DA_MT6886.bin` (or whatever your filenames are, also, check the route of the files, i've placed them under files/XYZ modify the command to the route of the files) and let it run in the background, it will be waiting for the device to connect in BROM mode.
 
 *Make sure your device is not connected.*
 
