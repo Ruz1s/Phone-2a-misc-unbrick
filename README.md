@@ -28,7 +28,7 @@ How to know if your device can be unbricked via this method?
 
 3. After that, you might proceed deleting the misc partition:
 
-Run `sudo mtk e misc --preloader files/preloader_raw.img --auth files/auth_sv6.auth --loader files/DA_MT6886.bin` (or whatever your filenames are, also, check the route of the files, i've placed them under files/XYZ modify the command to the route of the files) and let it run in the background, it will be waiting for the device to connect in BROM mode.
+Run `sudo mtk e misc --preloader files/preloader_raw.img --auth files/auth_sv6.auth --loader files/DA_MT6886.bin` (or whatever your filenames are, also, run the command from inside the repo folder, and adjust the paths if you moved the files out of files/) and let it run in the background, it will be waiting for the device to connect in BROM mode.
 
 *Make sure your device is not connected.*
 
